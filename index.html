@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Sencilla</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+
+        }
+        .placeholder {
+            background-color: green;
+            margin: 20px 0;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            margin: 0   auto;
+            width: 50%;
+        }
+        .leaderboard {
+            height: 90px;
+            width: 728px;
+
+        }
+        .banner {
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+    <!--Taken for relevant example -->
+    <script src="https://console.googletagservices.com/pubconsole/loader.js"></script>
+    <script type="text/javascript" async="" src="//c.amazon-adsystem.com/aax2/apstag.js"></script>
+    <script async="" src="https://cs.iubenda.com/cookie-solution/confs/js/417383.js"></script>
+    <script src="https://cdn.iubenda.com/cookie_solution/iubenda_cs/1.80.0/core-en.js" charset="UTF-8"></script>
+    <script src="//cdn.iubenda.com/cs/tcf/beta/stub.js"></script>
+    <script async="" src="//cdn.iubenda.com/cs/beta/iubenda_cs.js"></script>
+
+
+     <!-- GPT TAG -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous" class="optanon-category-C0004"></script>
+    <!-- END GPT TAG -->
+
+    <!--Relevant Yield Script-->
+    <script async src="https://futbol-cdn.relevant-digital.com/static/tags/681f65733d2c4652201505ed.js""></script>
+    <script>
+            (function() {
+                    window.relevantDigital = window.relevantDigital || {};
+                    relevantDigital.cmd = relevantDigital.cmd || [];
+                    relevantDigital.cmd.push(function() {
+                            relevantDigital.loadPrebid({
+                                    configId: '682649c15eec04c5b8e8ec71',
+                                    manageAdserver: true,
+                                    collapseEmptyDivs: true,
+                                    collapseBeforeAdFetch: false,
+                                    allowedDivIds: null, // set to an array to only load certain <div>s, example - ["divId1", "divId2"]
+                                    noSlotReload: false, // set true to only load ad slots that have never been loaded 
+                            });
+                    });
+            })();
+    </script>
+    <!--END Relevant Yield Script-->
+
+        <script>
+        (function() {
+                // Increase this time in milliseconds to delay loading of the analytics script
+                // But notice that doing that might increase the loss of analytic events
+                var LOAD_TIMEOUT_MS = 0;
+
+                var EVENTS = [ 'auctionInit','auctionEnd','bidAdjustment','bidTimeout','bidRequested','bidResponse',
+                        'noBid', 'bidWon','bidderDone','setTargeting','requestBids','addAdUnits','adRenderFailed'];        
+                var pbjsName = 'pbjs';
+                window[pbjsName] = window[pbjsName] || {};
+                var pbjs = window[pbjsName];
+                pbjs.que = pbjs.que || [];
+                window.relevantDigital = window.relevantDigital || {};
+                relevantDigital.pbEventLog = [];
+                pbjs.que.push(function () {
+                if(pbjs.getEvents) {
+                    var start = (window.performance || {}).timeOrigin;
+                    pbjs.getEvents().forEach(function (e) {
+                        relevantDigital.pbEventLog.push({ ev: e.eventType, args: e.args, ts: start ? new Date(start + e.elapsedTime) : new Date() });
+                    });
+                }
+                        EVENTS.forEach(function (ev) {
+                                pbjs.onEvent(ev, function(args) {
+                                        relevantDigital.pbEventLog.push({ ev: ev, args: args, ts: new Date() });
+                                });
+                        });
+                });
+                setTimeout(function() {
+                        var script = document.createElement('script');
+                        script.type = 'text/javascript';
+                        script.src=""https://futbol-cdn.relevant-digital.com/static/tags/681f65733d2c4652201505ed.js"";              
+                        document.head.appendChild(script);
+                }, LOAD_TIMEOUT_MS);
+        })();
+        </script>
+
+</head>
+<body>
+
+    <div id="tipsbladet_leadeboard_desktop" data-placement-type-name="tipsbladet_leadeboard_desktop" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_leadeboard_desktop" class="placeholder leaderboard">
+        tipsbladet_leadeboard_desktop
+    </div>
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+    <div  id="tipsbladet_halfpage_desktop" data-placement-type-name="tipsbladet_halfpage_desktop" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_halfpage_desktop" class="placeholder banner">
+        tipsbladet_halfpage_desktop
+    </div>
+
+     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_leadeboard_mobile" data-placement-type-name="tipsbladet_leadeboard_mobile" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_wph_leaderboard_sticky" class="placeholder banner">
+        tipsbladet_leadeboard_mobile
+    </div>
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_mpu_mobile" data-placement-type-name="tipsbladet_mpu_mobile" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_mpu_mobile" class="placeholder banner">
+        tipsbladet_mpu_mobile
+    </div>
+
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_mpu_mobile_v2" data-placement-type-name="tipsbladet_mpu_mobile_v2" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_mpu_mobile_v2" class="placeholder banner">
+        tipsbladet_mpu_mobile_v2
+    </div>
+
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_mpu_mobile_v3v4" data-placement-type-name="tipsbladet_mpu_mobile_v3" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_mpu_mobile_v3" class="placeholder banner">
+        tipsbladet_mpu_mobile_v3
+    </div>
+
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_mpu_mobile_v4" data-placement-type-name="tipsbladet_mpu_mobile_v4" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_mpu_mobile_v4" class="placeholder banner">
+        tipsbladet_mpu_mobile_v4
+    </div>
+
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_outofpage_desktop" data-placement-type-name="tipsbladet_outofpage_desktop" data-ad-unit-id="/63317524/tipsbladet/tipsbladet_wde_outofpage" class="placeholder banner">
+        tipsbladet_outofpage_desktop
+    </div>
+
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+     <div  id="tipsbladet_outofpage_mobile" data-placement-type-name="tipsbladet_outofpage_mobile" data-ad-unit-id="/63317524/les-transferts/mpu_mobile_v2" class="placeholder banner">
+        tipsbladet_outofpage_mobile
+    </div>
+
+</body>
+</html>
